@@ -76,7 +76,7 @@ fun SongItem(
             Text(
                 text = title,
                 style = TextStyle(
-                    color = Color.White,
+                    color = Color.DarkGray,
                     fontSize = 14.sp,
                     FontWeight.ExtraBold
                 )
@@ -84,7 +84,7 @@ fun SongItem(
             Text(
                 text = artist,
                 style = TextStyle(
-                    color = Color.White,
+                    color = Color.DarkGray,
                     fontSize = 12.sp,
                     FontWeight.Medium
                 )
