@@ -3,9 +3,10 @@ package com.alexbar.layoutbasic
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.alexbar.layoutbasic.ui.theme.LayoutBasicTheme
@@ -20,7 +21,9 @@ class MainActivity : ComponentActivity() {
                 val title = "Bohemian Rhapsody"
                 val artist = "Queen"
 
-                Box(modifier = Modifier.padding(16.dp)) {
+                Surface(modifier = Modifier.padding(16.dp), color = Color.DarkGray) {
+                    ListSongs()
+
 //                    PlayingCard(
 //                        painter = painter,
 //                        contentDescription = contentDescription,
@@ -28,12 +31,12 @@ class MainActivity : ComponentActivity() {
 //                        artist = artist
 //                    )
 
-                    PlayerComponent(
-                        painter = painter,
-                        contentDescription = contentDescription,
-                        title = title,
-                        artist = artist
-                    )
+//                    PlayerComponent(
+//                        painter = painter,
+//                        contentDescription = contentDescription,
+//                        title = title,
+//                        artist = artist
+//                    )
                 }
             }
         }
