@@ -3,13 +3,11 @@ package com.alexbar.layoutbasic
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.unit.dp
 import com.alexbar.layoutbasic.ui.theme.LayoutBasicTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,30 +15,20 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             LayoutBasicTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
+                val painter = painterResource(id = R.drawable.album_img)
+                val contentDescription = "Queen Album"
+                val title = "Bohemian Rhapsody"
+                val artist = "Queen"
+
+                Box(modifier = Modifier.padding(16.dp)) {
+                    PlayingCard(
+                        painter = painter,
+                        contentDescription = contentDescription,
+                        title = title,
+                        artist = artist
+                    )
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    LayoutBasicTheme {
-        Greeting("Android")
     }
 }
