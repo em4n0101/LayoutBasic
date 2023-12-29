@@ -21,7 +21,14 @@ class MainActivity : ComponentActivity() {
                 val artist = "Queen"
 
                 Box(modifier = Modifier.padding(16.dp)) {
-                    PlayingCard(
+//                    PlayingCard(
+//                        painter = painter,
+//                        contentDescription = contentDescription,
+//                        title = title,
+//                        artist = artist
+//                    )
+
+                    PlayerComponent(
                         painter = painter,
                         contentDescription = contentDescription,
                         title = title,
