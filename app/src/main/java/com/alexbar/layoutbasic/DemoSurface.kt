@@ -91,3 +91,41 @@ fun PlayerComponent(
         }
     }
 }
+
+@Composable
+fun BottomBar() {
+    Surface(
+        color = Color.White,
+        shape = CircleShape
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth().padding(16.dp),
+            horizontalArrangement = Arrangement.SpaceAround
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.house_icon),
+                contentDescription = "contentDescription",
+                contentScale = ContentScale.Fit,
+                modifier = Modifier.size(height = 20.dp, width = 20.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.search_icon),
+                contentDescription = "contentDescription",
+                contentScale = ContentScale.Fit,
+                modifier = Modifier.size(height = 20.dp, width = 20.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.file_icon),
+                contentDescription = "contentDescription",
+                contentScale = ContentScale.Fit,
+                modifier = Modifier.size(height = 20.dp, width = 20.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.user_icon),
+                contentDescription = "contentDescription",
+                contentScale = ContentScale.Fit,
+                modifier = Modifier.size(height = 20.dp, width = 20.dp)
+            )
+        }
+    }
+}
