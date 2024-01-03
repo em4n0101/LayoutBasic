@@ -1,21 +1,32 @@
 package com.alexbar.layoutbasic
 
+// Android Framework
 import android.annotation.SuppressLint
 import android.os.Bundle
+
+// Compose Activity
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+
+// Compose Foundation
 import androidx.compose.foundation.layout.padding
+
+// Compose Material3 Components
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+
+// Compose UI
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+
+// Project-Specific Imports
 import com.alexbar.layoutbasic.ui.theme.BackgroundColor
+import com.alexbar.layoutbasic.ui.theme.Dimens
 import com.alexbar.layoutbasic.ui.theme.LayoutBasicTheme
+import com.alexbar.layoutbasic.utils.MusicConstants
 
 class MainActivity : ComponentActivity() {
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -26,14 +37,14 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     topBar = {
                         Surface(
-                            modifier = Modifier.padding(24.dp),
+                            modifier = Modifier.padding(Dimens.main_activity_top_bar_padding_24),
                             color = BackgroundColor
                         ) {
                             Text(
-                                text = "DISCOVER",
+                                text = MusicConstants.main_activity_top_bar_title,
                                 style = TextStyle(
                                     color = Color.DarkGray,
-                                    fontSize = 20.sp,
+                                    fontSize = Dimens.main_activity_top_bar_font_size_20,
                                     FontWeight.ExtraBold
                                 )
                             )

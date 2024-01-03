@@ -1,5 +1,6 @@
 package com.alexbar.layoutbasic
 
+// Compose Foundation
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -12,9 +13,15 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+
+// Compose Material3 Components
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+
+// Compose Runtime
 import androidx.compose.runtime.Composable
+
+// Compose UI
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -24,8 +31,10 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+
+// Project-Specific Imports
+import com.alexbar.layoutbasic.ui.theme.Dimens
+import com.alexbar.layoutbasic.utils.MusicConstants
 
 @Composable
 fun PlayerComponent(
@@ -39,30 +48,24 @@ fun PlayerComponent(
         shape = CircleShape,
     ) {
         Row (
-            modifier = Modifier.fillMaxWidth().padding(horizontal = 24.dp, vertical = 16.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = Dimens.player_component_padding_horizontal_24, vertical = Dimens.player_component_padding_vertical_16),
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Box(modifier = Modifier
-                .size(50.dp)
-                .clip(CircleShape)
-                .background(Color.Red)
-            ) {
-                Image(
-                    painter = painter,
-                    contentDescription = contentDescription,
-                    contentScale = ContentScale.Crop,
-                )
-            }
+            PlayerComponentAlbumImage(painter = painter, contentDescription = contentDescription)
             Column(
-                modifier = Modifier.weight(1f).padding(16.dp),
+                modifier = Modifier
+                    .weight(Dimens.player_component_weight_1)
+                    .padding(Dimens.player_component_spacer_16),
                 verticalArrangement = Arrangement.Center
             ) {
                 Text(
                     text = title,
                     style = TextStyle(
                         color = Color.White,
-                        fontSize = 14.sp,
+                        fontSize = Dimens.player_component_font_size_14,
                         FontWeight.ExtraBold
                     )
                 )
@@ -70,65 +73,78 @@ fun PlayerComponent(
                     text = artist,
                     style = TextStyle(
                         color = Color.White,
-                        fontSize = 12.sp,
+                        fontSize = Dimens.player_component_font_size_12,
                         FontWeight.Medium
                     )
                 )
             }
-            Spacer(modifier = Modifier.size(8.dp))
-            Image(
-                painter = painterResource(id = R.drawable.heart_icon),
-                contentDescription = "favorite image",
-                contentScale = ContentScale.Crop,
-                modifier = Modifier.size(height = 35.dp, width = 35.dp)
-            )
-            Spacer(modifier = Modifier.size(16.dp))
-            Image(
-                painter = painterResource(id = R.drawable.pause_icon),
-                contentDescription = "pause image",
-                contentScale = ContentScale.Crop,
-                modifier = Modifier.size(height = 35.dp, width = 35.dp)
-            )
+            Spacer(modifier = Modifier.size(Dimens.player_component_spacer_8))
+            PlayerComponentIcon(R.drawable.heart_icon, MusicConstants.player_component_favorite_icon_content_description)
+            Spacer(modifier = Modifier.size(Dimens.player_component_spacer_16))
+            PlayerComponentIcon(R.drawable.pause_icon, MusicConstants.player_component_pause_icon_content_description)
         }
     }
 }
 
 @Composable
+fun PlayerComponentAlbumImage(
+    painter: Painter,
+    contentDescription: String
+) {
+    Box(modifier = Modifier
+        .size(Dimens.player_component_album_size_50)
+        .clip(CircleShape)
+        .background(Color.Red)
+    ) {
+        Image(
+            painter = painter,
+            contentDescription = contentDescription,
+            contentScale = ContentScale.Crop,
+        )
+    }
+}
+
+@Composable
+fun PlayerComponentIcon(
+    imageId: Int,
+    contentDescription: String
+) {
+    Image(
+        painter = painterResource(id = imageId),
+        contentDescription = contentDescription,
+        contentScale = ContentScale.Crop,
+        modifier = Modifier.size(Dimens.player_component_icon_size_35)
+    )
+}
+
+@Composable
 fun BottomBar() {
     Surface(
-        modifier = Modifier.height(80.dp),
+        modifier = Modifier.height(Dimens.bottom_bar_height_80),
         color = Color.White,
         shape = CircleShape
     ) {
         Row(
-            modifier = Modifier.fillMaxWidth().padding(16.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(Dimens.bottom_bar_padding_16),
             horizontalArrangement = Arrangement.SpaceAround,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Image(
-                painter = painterResource(id = R.drawable.house_icon),
-                contentDescription = "contentDescription",
-                contentScale = ContentScale.Fit,
-                modifier = Modifier.size(height = 20.dp, width = 20.dp)
-            )
-            Image(
-                painter = painterResource(id = R.drawable.search_icon),
-                contentDescription = "contentDescription",
-                contentScale = ContentScale.Fit,
-                modifier = Modifier.size(height = 20.dp, width = 20.dp)
-            )
-            Image(
-                painter = painterResource(id = R.drawable.file_icon),
-                contentDescription = "contentDescription",
-                contentScale = ContentScale.Fit,
-                modifier = Modifier.size(height = 20.dp, width = 20.dp)
-            )
-            Image(
-                painter = painterResource(id = R.drawable.user_icon),
-                contentDescription = "contentDescription",
-                contentScale = ContentScale.Fit,
-                modifier = Modifier.size(height = 20.dp, width = 20.dp)
-            )
+            val icons = listOf(R.drawable.house_icon, R.drawable.search_icon, R.drawable.file_icon, R.drawable.user_icon)
+            icons.forEach { icon ->
+                BottomBarItem(iconId = icon)
+            }
         }
     }
+}
+
+@Composable
+fun BottomBarItem(iconId: Int) {
+    Image(
+        painter = painterResource(id = iconId),
+        contentDescription = MusicConstants.bottom_bar_icon_content_description,
+        contentScale = ContentScale.Fit,
+        modifier = Modifier.size(Dimens.bottom_bar_item_size_20)
+    )
 }
