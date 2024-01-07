@@ -46,4 +46,27 @@ object Dimens {
 
     val main_activity_top_bar_padding_24 = 24.dp
     val main_activity_top_bar_font_size_20 = 20.sp
+
+    val sign_in_padding_32 = 32.dp
+    val sign_in_constraint_8 = 8.dp
+    val sign_in_constraint_24 = 24.dp
+    val sign_in_constraint_40 = 40.dp
+    val sign_in_icon_more_size = 30.dp
+    val sign_in_rounded_corner_shape = 40.dp
+    val sign_in_button_height_55 = 55.dp
+    const val sign_in_background_gradient_start_x = -250f
+    const val sign_in_top_guideline = 0.25f
+    const val sign_in_button_guideline = 0.65f
+
+    val sign_up_padding_32 = 32.dp
+    val sign_up_constraint_16 = 16.dp
+    val sign_up_constraint_24 = 24.dp
+    val sign_up_constraint_40 = 40.dp
+    val sign_up_constraint_70 = 70.dp
+    val sign_up_icon_more_size = 30.dp
+    val sign_up_icon_gym_size = 80.dp
+    val sign_up_icon_social_network = 30.dp
+    val sign_up_button_height_55 = 55.dp
+    const val sign_up_top_guideline = 0.20f
+
 }
