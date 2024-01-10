@@ -13,3 +13,6 @@ val Pink40 = Color(0xFF7D5260)
 val BackgroundColor = Color(0xFFFBEAE4)
 val BackgroundColorGradientStart = Color(0xFFA52B3A)
 val BackgroundColorGradientEnd = Color(0xFF291835)
+
+val BoardLightColor = Color(0xFFB8CC74)
+val BoardDarkColor = Color(0xFFA4B364)

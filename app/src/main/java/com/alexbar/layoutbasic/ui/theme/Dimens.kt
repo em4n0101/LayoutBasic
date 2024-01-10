@@ -69,4 +69,10 @@ object Dimens {
     val sign_up_button_height_55 = 55.dp
     const val sign_up_top_guideline = 0.20f
 
+    const val snake_size_100 = 100f
+    const val snake_init_direction_y = 0f
+    const val board_width = 11
+    const val board_height = 23
+    const val snake_circle_radius = 50f
+
 }
