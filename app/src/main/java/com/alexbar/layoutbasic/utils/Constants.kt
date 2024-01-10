@@ -22,3 +22,7 @@ object MusicConstants {
 
     const val main_activity_top_bar_title = "DISCOVER"
 }
+object GameConstants {
+    const val game_delay_300_ms = 300L
+    const val game_over_text = "Game Over"
+}

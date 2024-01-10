@@ -15,6 +15,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import com.alexbar.layoutbasic.screen.SnakeGame
 
 class MainActivity : ComponentActivity() {
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -22,7 +23,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
 
-            WelcomeScreen()
+            SnakeGame()
+//            WelcomeScreen()
 //            UserDataTexFields()
 //            ConstraintLayoutScreen()
 //            DemoConstraintLayout()
