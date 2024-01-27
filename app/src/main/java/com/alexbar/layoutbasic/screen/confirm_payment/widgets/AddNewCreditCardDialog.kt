@@ -1,13 +1,37 @@
 package com.alexbar.layoutbasic.screen.confirm_payment.widgets
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
-import androidx.compose.ui.*
+import androidx.compose.foundation.gestures.detectTapGestures
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.material3.TextField
+import androidx.compose.material3.TextFieldDefaults
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.*
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import com.alexbar.layoutbasic.ui.theme.Dimens.dimen_16_dp
 import com.alexbar.layoutbasic.utils.ConfirmPayment.add_credit_card_cancel
@@ -19,7 +43,8 @@ import com.alexbar.layoutbasic.utils.ConfirmPayment.add_credit_card_year
 
 @Composable
 fun AddCreditCardDialog(
-    onDismissRequest: () -> Unit
+    onCreateCard:(CreditCardInfo) -> Unit,
+    onDismissRequest: () -> Unit,
 ) {
     var name by remember { mutableStateOf("") }
     var number by remember { mutableStateOf("") }
@@ -28,8 +53,13 @@ fun AddCreditCardDialog(
 
     Dialog(onDismissRequest = onDismissRequest) {
         Box(modifier = Modifier
-                .fillMaxSize()
-                .background(Color.Black.copy(alpha = 0.5f))
+            .clip(RoundedCornerShape(16.dp))
+            .pointerInput(Unit) { detectTapGestures { } }
+            .shadow(8.dp, shape = RoundedCornerShape(16.dp))
+            .background(
+                MaterialTheme.colorScheme.surface
+            ),
+            contentAlignment = Alignment.Center
         )  {
             Box(modifier = Modifier
                 .clip(RectangleShape)
@@ -55,8 +85,9 @@ fun AddCreditCardDialog(
 
                     TextField(
                         value = number,
-                        onValueChange = { number = it },
+                        onValueChange = { number = it.take(16) },
                         label = { Text(add_credit_card_number) },
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(horizontal = dimen_16_dp),
@@ -104,7 +135,17 @@ fun AddCreditCardDialog(
                         TextButton(onClick = onDismissRequest) {
                             Text(add_credit_card_cancel)
                         }
-                        TextButton(onClick = onDismissRequest) {
+                        TextButton(onClick = {
+                            onCreateCard(
+                                CreditCardInfo(
+                                    name,
+                                    number,
+                                    expirationMonth,
+                                    expirationYear
+                                )
+                            )
+                            onDismissRequest()
+                        }) {
                             Text(add_credit_card_save)
                         }
                     }
@@ -114,8 +155,15 @@ fun AddCreditCardDialog(
     }
 }
 
+data class CreditCardInfo(
+    val name: String,
+    val number: String,
+    val expirationMonth: String,
+    val expirationYear: String
+)
+
 @Preview
 @Composable
 fun PreviewDialog() {
-    AddCreditCardDialog {}
+    AddCreditCardDialog({}) {}
 }

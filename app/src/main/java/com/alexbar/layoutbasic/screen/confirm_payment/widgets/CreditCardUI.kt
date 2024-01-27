@@ -56,7 +56,7 @@ fun CreditCardUI (
             verticalArrangement = Arrangement.SpaceBetween
         ) {
             CardItem(key = credit_card_holder, value = name)
-            CardItem(value = number)
+            CardItem(value = formatCreditCardNumber(number))
             CardItem(key = credit_card_expires, value = "${expirationMonth}/${expirationYear}")
         }
     }
@@ -79,6 +79,19 @@ fun CardItem(
             color = Color.White
         )
     }
+}
+
+fun formatCreditCardNumber(input: String): String {
+    val trimmed = input.replace(" ", "")
+    val formatted = buildString {
+        for (i in trimmed.indices) {
+            if (i > 0 && i % 4 == 0) {
+                append(" ")
+            }
+            append(trimmed[i])
+        }
+    }
+    return formatted
 }
 
 @Preview
