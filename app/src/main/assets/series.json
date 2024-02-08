@@ -1,0 +1,451 @@
+[
+  {
+    "adult": false,
+    "backdrop_path": "/leVOmOabRRWgdhUDNFQhpOAa5s3.jpg",
+    "id": 118642,
+    "name": "Mr. & Mrs. Smith",
+    "original_language": "en",
+    "original_name": "Mr. & Mrs. Smith",
+    "overview": "Meet the Smiths: two lonely strangers, John and Jane, who have given up their lives and identities to be thrown together as partners – both in espionage and in marriage",
+    "poster_path": "/kvJvGxsDLi3MmHzc9nregyJtOWY.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      10759,
+      35,
+      18
+    ],
+    "popularity": 690.746,
+    "first_air_date": "2024-02-01",
+    "vote_average": 6.23,
+    "vote_count": 61,
+    "origin_country": [
+      "US"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/siA2d4PNn4JVFZAwfIYx4pnKCaK.jpg",
+    "id": 46648,
+    "name": "True Detective",
+    "original_language": "en",
+    "original_name": "True Detective",
+    "overview": "An American anthology police detective series utilizing multiple timelines in which investigations seem to unearth personal and professional secrets of those involved, both within or outside the law.",
+    "poster_path": "/cuV2O5ZyDLHSOWzg3nLVljp1ubw.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      18
+    ],
+    "popularity": 1017.097,
+    "first_air_date": "2014-01-12",
+    "vote_average": 8.321,
+    "vote_count": 3010,
+    "origin_country": [
+      "US"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+    "id": 37854,
+    "name": "One Piece",
+    "original_language": "ja",
+    "original_name": "ワンピース",
+    "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+    "poster_path": "/cMD9Ygz11zjJzAovURpO75Qg7rT.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      10759,
+      35,
+      16
+    ],
+    "popularity": 205.327,
+    "first_air_date": "1999-10-20",
+    "vote_average": 8.7,
+    "vote_count": 4301,
+    "origin_country": [
+      "JP"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/menEyCOdkjXqwpJy3cwOH8kfZrj.jpg",
+    "id": 46518,
+    "name": "Masters of the Air",
+    "original_language": "en",
+    "original_name": "Masters of the Air",
+    "overview": "During World War II, airmen risk their lives with the 100th Bomb Group, a brotherhood forged by courage, loss, and triumph.",
+    "poster_path": "/rSAmgcoA74371rplbqM27yVsd3y.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      10768,
+      18
+    ],
+    "popularity": 630.211,
+    "first_air_date": "2024-01-25",
+    "vote_average": 7.5,
+    "vote_count": 60,
+    "origin_country": [
+      "US"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/n6V0WbgytbeXKoGoUjpHvh2GlbM.jpg",
+    "id": 103540,
+    "name": "Percy Jackson and the Olympians",
+    "original_language": "en",
+    "original_name": "Percy Jackson and the Olympians",
+    "overview": "Percy Jackson is on a dangerous quest. Outrunning monsters and outwitting gods, he must journey across America to return Zeus' master bolt and stop an all-out war. With the help of his quest mates Annabeth and Grover, Percy's journey will lead him closer to the answers he seeks: how to fit into a world where he feels out of place, and find out who he's destined to be.",
+    "poster_path": "/upmXGc1QovmPBU0mQJR2re6ruKd.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      10759,
+      10765,
+      18,
+      10751
+    ],
+    "popularity": 535.959,
+    "first_air_date": "2023-12-19",
+    "vote_average": 7.471,
+    "vote_count": 294,
+    "origin_country": [
+      "US"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/AvsNXUbP7UKCVnypyx2eWp8z2N3.jpg",
+    "id": 94954,
+    "name": "Hazbin Hotel",
+    "original_language": "en",
+    "original_name": "Hazbin Hotel",
+    "overview": "In attempt to find a non-violent alternative for reducing Hell's overpopulation, the daughter of Lucifer opens a rehabilitation hotel that offers a group of misfit demons a chance at redemption.",
+    "poster_path": "/rXojaQcxVUubPLSrFV8PD4xdjrs.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      16,
+      35,
+      10765
+    ],
+    "popularity": 1077.119,
+    "first_air_date": "2024-01-18",
+    "vote_average": 9.11,
+    "vote_count": 462,
+    "origin_country": [
+      "US"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/u98PeujOJCXCowph9mxRzo9Nw1s.jpg",
+    "id": 4546,
+    "name": "Curb Your Enthusiasm",
+    "original_language": "en",
+    "original_name": "Curb Your Enthusiasm",
+    "overview": "The off-kilter, unscripted comic vision of Larry David, who plays himself in a parallel universe in which he can't seem to do anything right, and, by his standards, neither can anyone else.",
+    "poster_path": "/mZqWmSq1M61Jlre3furVDSXvdrN.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      35
+    ],
+    "popularity": 655.692,
+    "first_air_date": "2000-10-15",
+    "vote_average": 8.051,
+    "vote_count": 669,
+    "origin_country": [
+      "US"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg",
+    "id": 1429,
+    "name": "Attack on Titan",
+    "original_language": "ja",
+    "original_name": "進撃の巨人",
+    "overview": "Several hundred years ago, humans were nearly exterminated by Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest Titans. Flash forward to the present and the city has not seen a Titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a Colossal Titan that appears out of thin air. As the smaller Titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single Titan and take revenge for all of mankind.",
+    "poster_path": "/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      16,
+      10765,
+      10759
+    ],
+    "popularity": 118.29,
+    "first_air_date": "2013-04-07",
+    "vote_average": 8.664,
+    "vote_count": 5873,
+    "origin_country": [
+      "JP"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/wXSnajAZ5ppTKa8Z5zzWGOK85YH.jpg",
+    "id": 1399,
+    "name": "Game of Thrones",
+    "original_language": "en",
+    "original_name": "Game of Thrones",
+    "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+    "poster_path": "/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      10765,
+      18,
+      10759
+    ],
+    "popularity": 736.743,
+    "first_air_date": "2011-04-17",
+    "vote_average": 8.444,
+    "vote_count": 22595,
+    "origin_country": [
+      "US"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/1qpUk27LVI9UoTS7S0EixUBj5aR.jpg",
+    "id": 52814,
+    "name": "Halo",
+    "original_language": "en",
+    "original_name": "Halo",
+    "overview": "Depicting an epic 26th-century conflict between humanity and an alien threat known as the Covenant, the series weaves deeply drawn personal stories with action, adventure and a richly imagined vision of the future.",
+    "poster_path": "/ujlbbxlQdf9sBa47htuXtn24b1n.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      10759,
+      10765
+    ],
+    "popularity": 287.787,
+    "first_air_date": "2022-03-24",
+    "vote_average": 8.295,
+    "vote_count": 2066,
+    "origin_country": [
+      "US"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/7BoRhg8zXP0ca9Zql4p8llCFR2P.jpg",
+    "id": 221851,
+    "name": "Marry My Husband",
+    "original_language": "ko",
+    "original_name": "내 남편과 결혼해줘",
+    "overview": "Kang Ji-won, a terminally ill cancer patient, is killed by her husband and best friend after she witnesses them having an affair. She wakes up 10 years before the incident and decides to seek revenge with the help of Yu Ji-hyuk, a director at the company where she works. Now, she must reclaim her fate and eliminate the trash from her life.",
+    "poster_path": "/JV3DXl1fITfoyHtyPzNuZyzh8q.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      18,
+      10765,
+      35
+    ],
+    "popularity": 396.769,
+    "first_air_date": "2024-01-01",
+    "vote_average": 8.599,
+    "vote_count": 106,
+    "origin_country": [
+      "KR"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/nj06Yo0yVzI7jx6novjyGOyNQKC.jpg",
+    "id": 137893,
+    "name": "Griselda",
+    "original_language": "en",
+    "original_name": "Griselda",
+    "overview": "Chronicles the life of Griselda Blanco, who created one of the most profitable cartels in history. A devoted mother, Blanco’s lethal blend of charm and unsuspecting savagery helped her expertly navigate between family and business leading her to become widely known as the “Black Widow”.",
+    "poster_path": "/nhEtK1lJKb3kqBtDBDXynGr3hJL.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      18,
+      80
+    ],
+    "popularity": 772.33,
+    "first_air_date": "2024-01-25",
+    "vote_average": 7.629,
+    "vote_count": 112,
+    "origin_country": [
+      "US"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/8Xh6YJr2VS66EiifbtDYV3ZgoVT.jpg",
+    "id": 133813,
+    "name": "Death and Other Details",
+    "original_language": "en",
+    "original_name": "Death and Other Details",
+    "overview": "How do you solve a murder in a post-fact world? Especially when sailing the Mediterranean on an ocean liner filled with the wealthy and powerful. Everyone on board is hiding something… but is one of them a killer? That’s what the world’s once greatest detective, Rufus Cotesworth, and his protégée, Imogene, aim to discover.",
+    "poster_path": "/2DEa0Bz3j9ZhPRdBmNyco38OR6p.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      9648,
+      18,
+      80
+    ],
+    "popularity": 266.255,
+    "first_air_date": "2024-01-16",
+    "vote_average": 7.4,
+    "vote_count": 23,
+    "origin_country": [
+      "US"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/cFyp7F8qiBSuSj1qhUnu8MDvubl.jpg",
+    "id": 201834,
+    "name": "ted",
+    "original_language": "en",
+    "original_name": "ted",
+    "overview": "It's 1993 and Ted the bear's moment of fame has passed, leaving him living with his best friend, 16-year-old John Bennett, who lives in a working-class Boston home with his parents and cousin. Ted may not be the best influence on John, but when it comes right down to it, he's willing to go out on a limb to help his friend and his family.",
+    "poster_path": "/cPn71YFDENH0JkWUezlsLyWmLfN.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      35
+    ],
+    "popularity": 619.027,
+    "first_air_date": "2024-01-11",
+    "vote_average": 8.164,
+    "vote_count": 207,
+    "origin_country": [
+      "US"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/qEmHC7sV1lj3JHf5xQKshmGcq24.jpg",
+    "id": 127532,
+    "name": "Solo Leveling",
+    "original_language": "ja",
+    "original_name": "俺だけレベルアップな件",
+    "overview": "They say whatever doesn’t kill you makes you stronger, but that’s not the case for the world’s weakest hunter Sung Jinwoo. After being brutally slaughtered by monsters in a high-ranking dungeon, Jinwoo came back with the System, a program only he could see, that’s leveling him up in every way. Now, he’s inspired to discover the secrets behind his powers and the dungeon that spawned them.",
+    "poster_path": "/geCRueV3ElhRTr0xtJuEWJt6dJ1.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      16,
+      10759,
+      10765
+    ],
+    "popularity": 475.722,
+    "first_air_date": "2024-01-07",
+    "vote_average": 8.867,
+    "vote_count": 98,
+    "origin_country": [
+      "JP"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/m5CggjJuFc08QCuKz54znHP6spJ.jpg",
+    "id": 108978,
+    "name": "Reacher",
+    "original_language": "en",
+    "original_name": "Reacher",
+    "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
+    "poster_path": "/jFuH0md41x5mB4qj5344mSmtHrO.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      10759,
+      80,
+      18
+    ],
+    "popularity": 698.762,
+    "first_air_date": "2022-02-03",
+    "vote_average": 8.109,
+    "vote_count": 1368,
+    "origin_country": [
+      "US"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/qGUzb1aorgn8dQHsXs9yctAv4uq.jpg",
+    "id": 230824,
+    "name": "Branding in Seongsu",
+    "original_language": "ko",
+    "original_name": "브랜딩 인 성수동",
+    "overview": "A relentless marketing executive and a warm-hearted intern are always at odds with each other but everything takes a wild turn when their souls switch after an unexpected kiss.",
+    "poster_path": "/lswJKkgHUf5SS87rUC4pYtNqPpi.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      18
+    ],
+    "popularity": 123.563,
+    "first_air_date": "2024-02-05",
+    "vote_average": 0,
+    "vote_count": 0,
+    "origin_country": [
+      "KR"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/gmECX1DvFgdUPjtio2zaL8BPYPu.jpg",
+    "id": 95479,
+    "name": "Jujutsu Kaisen",
+    "original_language": "ja",
+    "original_name": "呪術廻戦",
+    "overview": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
+    "poster_path": "/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      16,
+      10759,
+      10765
+    ],
+    "popularity": 720.761,
+    "first_air_date": "2020-10-03",
+    "vote_average": 8.6,
+    "vote_count": 3117,
+    "origin_country": [
+      "JP"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/q78bZF6LIOIUonmIFOgUTX2JqEA.jpg",
+    "id": 242392,
+    "name": "Alexander: The Making of a God",
+    "original_language": "en",
+    "original_name": "Alexander: The Making of a God",
+    "overview": "Expert interviews and gripping reenactments combine to reveal the extraordinary life of Alexander the Great and his burning desire to conquer the world.",
+    "poster_path": "/tKUTpdyg0wGfIYplIAfkN6hDbRw.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      99,
+      18
+    ],
+    "popularity": 101.439,
+    "first_air_date": "2024-01-31",
+    "vote_average": 7.214,
+    "vote_count": 14,
+    "origin_country": [
+      "GB"
+    ]
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/ecjeMjIWSJZEenJw1pTvurx6h0o.jpg",
+    "id": 97645,
+    "name": "Solar Opposites",
+    "original_language": "en",
+    "original_name": "Solar Opposites",
+    "overview": "A family of aliens from a much better world must take refuge in middle America after the destruction of their planet. Their mission: protect the Pupa, a living super computer that will one day evolve into its true form, consume them and terraform the Earth.",
+    "poster_path": "/dPClRec0BXzWG7B9jsTdimoeJpM.jpg",
+    "media_type": "tv",
+    "genre_ids": [
+      35,
+      16,
+      10765
+    ],
+    "popularity": 173.925,
+    "first_air_date": "2020-05-08",
+    "vote_average": 7.8,
+    "vote_count": 443,
+    "origin_country": [
+      "US"
+    ]
+  }
+]

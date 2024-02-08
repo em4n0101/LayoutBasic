@@ -1,0 +1,422 @@
+[
+  {
+    "adult": false,
+    "backdrop_path": "/3mpgltEMgPf8zFtPnAWdDVN8ZT1.jpg",
+    "id": 1056360,
+    "title": "American Fiction",
+    "original_language": "en",
+    "original_title": "American Fiction",
+    "overview": "A novelist fed up with the establishment profiting from \"Black\" entertainment uses a pen name to write a book that propels him into the heart of hypocrisy and the madness he claims to disdain.",
+    "poster_path": "/57MFWGHarg9jid7yfDTka4RmcMU.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      35,
+      18
+    ],
+    "popularity": 89.205,
+    "release_date": "2023-11-10",
+    "video": false,
+    "vote_average": 7.347,
+    "vote_count": 72
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/cw8YicokMa3okekWq2rJT8Hccaz.jpg",
+    "id": 790462,
+    "title": "I.S.S.",
+    "original_language": "en",
+    "original_title": "I.S.S.",
+    "overview": "Tensions flare in the near future aboard the International Space Station as a conflict breaks out on Earth. U.S. and Russian astronauts receive orders from the ground: take control of the station by any means necessary.",
+    "poster_path": "/blPAS2HZcOGLTREbUeNIWmz0B6f.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      878,
+      53
+    ],
+    "popularity": 41.198,
+    "release_date": "2023-06-12",
+    "video": false,
+    "vote_average": 5.043,
+    "vote_count": 23
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/4MCKNAc6AbWjEsM2h9Xc29owo4z.jpg",
+    "id": 866398,
+    "title": "The Beekeeper",
+    "original_language": "en",
+    "original_title": "The Beekeeper",
+    "overview": "One man’s campaign for vengeance takes on national stakes after he is revealed to be a former operative of a powerful and clandestine organization known as Beekeepers.",
+    "poster_path": "/A7EByudX0eOzlkQ2FIbogzyazm2.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      28,
+      53,
+      18
+    ],
+    "popularity": 4645.469,
+    "release_date": "2024-01-10",
+    "video": false,
+    "vote_average": 7.283,
+    "vote_count": 784
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/feSiISwgEpVzR1v3zv2n2AU4ANJ.jpg",
+    "id": 609681,
+    "title": "The Marvels",
+    "original_language": "en",
+    "original_title": "The Marvels",
+    "overview": "Carol Danvers, aka Captain Marvel, has reclaimed her identity from the tyrannical Kree and taken revenge on the Supreme Intelligence. But unintended consequences see Carol shouldering the burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree revolutionary, her powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol’s estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
+    "poster_path": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      878,
+      12,
+      28
+    ],
+    "popularity": 1399.352,
+    "release_date": "2023-11-08",
+    "video": false,
+    "vote_average": 6.339,
+    "vote_count": 1438
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/zLj0peaxy5y2SlC6wNIQ4V0pfqg.jpg",
+    "id": 1139829,
+    "title": "Orion and the Dark",
+    "original_language": "en",
+    "original_title": "Orion and the Dark",
+    "overview": "A boy with an active imagination faces his fears on an unforgettable journey through the night with his new friend: a giant, smiling creature named Dark.",
+    "poster_path": "/uHiXFLMlnl5jBjtfOliapN16yBD.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      16,
+      10751,
+      35,
+      14
+    ],
+    "popularity": 529.249,
+    "release_date": "2024-02-02",
+    "video": false,
+    "vote_average": 6.842,
+    "vote_count": 98
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
+    "id": 572802,
+    "title": "Aquaman and the Lost Kingdom",
+    "original_language": "en",
+    "original_title": "Aquaman and the Lost Kingdom",
+    "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Aquaman forges an alliance with his imprisoned brother. They must protect the kingdom.",
+    "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      28,
+      12,
+      14
+    ],
+    "popularity": 1111.929,
+    "release_date": "2023-12-20",
+    "video": false,
+    "vote_average": 6.972,
+    "vote_count": 1461
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/8te0oIAuUOxi03RbM1SfL3xUYHB.jpg",
+    "id": 848538,
+    "title": "Argylle",
+    "original_language": "en",
+    "original_title": "Argylle",
+    "overview": "When the plots of reclusive author Elly Conway's fictional espionage novels begin to mirror the covert actions of a real-life spy organization, quiet evenings at home become a thing of the past. Accompanied by her cat Alfie and Aiden, a cat-allergic spy, Elly races across the world to stay one step ahead of the killers as the line between Conway's fictional world and her real one begins to blur.",
+    "poster_path": "/siduVKgOnABO4WH4lOwPQwaGwJp.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      35,
+      28,
+      80
+    ],
+    "popularity": 268.676,
+    "release_date": "2024-01-31",
+    "video": false,
+    "vote_average": 6.352,
+    "vote_count": 165
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/yyFc8Iclt2jxPmLztbP617xXllT.jpg",
+    "id": 787699,
+    "title": "Wonka",
+    "original_language": "en",
+    "original_title": "Wonka",
+    "overview": "Willy Wonka – chock-full of ideas and determined to change the world one delectable bite at a time – is proof that the best things in life begin with a dream, and if you’re lucky enough to meet Willy Wonka, anything is possible.",
+    "poster_path": "/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      35,
+      10751,
+      14
+    ],
+    "popularity": 1440.105,
+    "release_date": "2023-12-06",
+    "video": false,
+    "vote_average": 7.197,
+    "vote_count": 1912
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/acpFrSmVLnTNAIuHxnZArkC3dwU.jpg",
+    "id": 598387,
+    "title": "The Tiger's Apprentice",
+    "original_language": "en",
+    "original_title": "The Tiger's Apprentice",
+    "overview": "After the death of his grandmother, Tom Lee discovers he is part of a long lineage of magical protectors known as the Guardians. With guidance from a mythical tiger named Hu and the other Zodiac animal warriors, Tom trains to take on an evil force that threatens humanity.",
+    "poster_path": "/iiid1xMhoAcW83VJ9LdAqf4Vtbr.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      16,
+      28,
+      12,
+      10751,
+      14
+    ],
+    "popularity": 305.406,
+    "release_date": "2024-02-02",
+    "video": false,
+    "vote_average": 6.7,
+    "vote_count": 14
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/hzZ1Qe7HumaTu4sSTHDPMK2kYtb.jpg",
+    "id": 1059345,
+    "title": "Cult Killer",
+    "original_language": "en",
+    "original_title": "Cult Killer",
+    "overview": "A private investigator is forced into a dangerous alliance with a killer in order to uncover a quiet town’s grisly criminal underbelly and clear the name of her mentor, who is implicated in the crimes.",
+    "poster_path": "/jSR06FpV1H36OmW0jfEmvG73l2r.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      9648,
+      53,
+      80,
+      27
+    ],
+    "popularity": 15.278,
+    "release_date": "2024-01-19",
+    "video": false,
+    "vote_average": 5.9,
+    "vote_count": 8
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/x0kapNdCErgiHSks2FljYT2MO00.jpg",
+    "id": 976584,
+    "title": "The Book of Clarence",
+    "original_language": "en",
+    "original_title": "The Book of Clarence",
+    "overview": "Streetwise but down-on-his-luck, Clarence is struggling to find a better life for his family, while fighting to free himself of debt. Captivated by the power and glory of the rising Messiah and His apostles, he risks everything to carve his own path to a divine life, and ultimately discovers that the redemptive power of belief may be his only way out.",
+    "poster_path": "/hZuq34U1dWuIIWgTa6wZNPeDinS.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      12,
+      18,
+      35
+    ],
+    "popularity": 33.123,
+    "release_date": "2024-01-11",
+    "video": false,
+    "vote_average": 5.5,
+    "vote_count": 11
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/sfjqJDmNqMIImO5khiddb9TARvO.jpg",
+    "id": 438631,
+    "title": "Dune",
+    "original_language": "en",
+    "original_title": "Dune",
+    "overview": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.",
+    "poster_path": "/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      878,
+      12
+    ],
+    "popularity": 248.686,
+    "release_date": "2021-09-15",
+    "video": false,
+    "vote_average": 7.784,
+    "vote_count": 9984
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/t9c29ZVoPfZIOFbnUJRQYmfFPM0.jpg",
+    "id": 973778,
+    "title": "The End We Start From",
+    "original_language": "en",
+    "original_title": "The End We Start From",
+    "overview": "As London is submerged below floodwaters, a woman gives birth to her first child. Days later, she and her baby are forced to leave their home in search of safety. They head north through a newly dangerous country seeking refuge from place to place.",
+    "poster_path": "/S9U0axheNakD9LQusEpFijDgSe.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      18,
+      53
+    ],
+    "popularity": 20.884,
+    "release_date": "2023-12-08",
+    "video": false,
+    "vote_average": 6.409,
+    "vote_count": 11
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/dMkhsgmsH5XK3SmVdsvA4I9B9C.jpg",
+    "id": 917594,
+    "title": "Camp Hideout",
+    "original_language": "en",
+    "original_title": "Camp Hideout",
+    "overview": "Noah is a troubled teen who nearly gets caught stealing a top-secret gadget from some big city thugs. After barely escaping, he decides to hide out at a summer camp that's run by the eccentric Falco and counselors Jake and Selena. As Noah tries to blend in with the rest of the rowdy campers, his crooked partners show up to steal the classified item, now in his possession.",
+    "poster_path": "/lMqjU9b1VPfGUtunk7slSVt6uvR.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      10751,
+      35
+    ],
+    "popularity": 7.757,
+    "release_date": "2023-09-15",
+    "video": false,
+    "vote_average": 5.8,
+    "vote_count": 4
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/bQS43HSLZzMjZkcHJz4fGc7fNdz.jpg",
+    "id": 792307,
+    "title": "Poor Things",
+    "original_language": "en",
+    "original_title": "Poor Things",
+    "overview": "Brought back to life by an unorthodox scientist, a young woman runs off with a debauched lawyer on a whirlwind adventure across the continents. Free from the prejudices of her times, she grows steadfast in her purpose to stand for equality and liberation.",
+    "poster_path": "/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      878,
+      10749,
+      35
+    ],
+    "popularity": 441.719,
+    "release_date": "2023-12-07",
+    "video": false,
+    "vote_average": 8.16,
+    "vote_count": 985
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/rx6FXL5Pu2FQC3HrowNQrdqojnM.jpg",
+    "id": 634492,
+    "title": "Madame Web",
+    "original_language": "en",
+    "original_title": "Madame Web",
+    "overview": "Forced to confront revelations about her past, paramedic Cassandra Webb forges a relationship with three young women destined for powerful futures...if they can all survive a deadly present.",
+    "poster_path": "/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      878,
+      28,
+      12
+    ],
+    "popularity": 160.915,
+    "release_date": "2024-02-14",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/wrphIaXVPJ5klAlbjQdLNCsZFIc.jpg",
+    "id": 695721,
+    "title": "The Hunger Games: The Ballad of Songbirds & Snakes",
+    "original_language": "en",
+    "original_title": "The Hunger Games: The Ballad of Songbirds & Snakes",
+    "overview": "64 years before he becomes the tyrannical president of Panem, Coriolanus Snow sees a chance for a change in fortunes when he mentors Lucy Gray Baird, the female tribute from District 12.",
+    "poster_path": "/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      18,
+      878,
+      28
+    ],
+    "popularity": 423.413,
+    "release_date": "2023-11-15",
+    "video": false,
+    "vote_average": 7.223,
+    "vote_count": 1664
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/uhUO7vQQKvCTfQWubOt5MAKokbL.jpg",
+    "id": 693134,
+    "title": "Dune: Part Two",
+    "original_language": "en",
+    "original_title": "Dune: Part Two",
+    "overview": "Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, Paul endeavors to prevent a terrible future only he can foresee.",
+    "poster_path": "/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      878,
+      12
+    ],
+    "popularity": 134.351,
+    "release_date": "2024-02-28",
+    "video": false,
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/kcrjQkK9XlUe0yD1cZptf4z5h3v.jpg",
+    "id": 919207,
+    "title": "12.12: The Day",
+    "original_language": "ko",
+    "original_title": "서울의 봄",
+    "overview": "After the assassination of President Park, martial law has been declared. A coup d’état bursts out by Defense Security Commander Chun Doo-gwang and a private band of officers following him. Capital Defense Commander Lee Tae-shin, an obstinate soldier who believes the military should not take political actions, fights against Chun Doo-gwang to stop him. The conflict between the two grows while military leaders are holding their decision and Defense Minister is gone. In the midst of chaos, the spring of Seoul that everyone longed for heads to unexpected direction.",
+    "poster_path": "/qYczuua2tgjfxcdtLNDC0n4mOHz.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      18,
+      36,
+      10752,
+      53,
+      80
+    ],
+    "popularity": 36.277,
+    "release_date": "2023-11-22",
+    "video": false,
+    "vote_average": 8.3,
+    "vote_count": 12
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/nHf61UzkfFno5X1ofIhugCPus2R.jpg",
+    "id": 346698,
+    "title": "Barbie",
+    "original_language": "en",
+    "original_title": "Barbie",
+    "overview": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+    "poster_path": "/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      35,
+      12,
+      14
+    ],
+    "popularity": 275.347,
+    "release_date": "2023-07-19",
+    "video": false,
+    "vote_average": 7.1,
+    "vote_count": 7241
+  }
+]

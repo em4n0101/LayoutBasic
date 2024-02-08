@@ -77,10 +77,13 @@ object Dimens {
 
     val dimen_4_dp = 4.dp
     val dimen_8_dp = 8.dp
+    val dimen_12_dp = 12.dp
     val dimen_16_dp = 16.dp
     val dimen_20_dp = 20.dp
     val dimen_24_dp = 24.dp
     val dimen_80_dp = 80.dp
+    val dimen_150_dp = 150.dp
+    val dimen_180_dp = 180.dp
     val dimen_220_dp = 220.dp
     val dimen_250_dp = 250.dp
     val dimen_300_dp = 300.dp
