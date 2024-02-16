@@ -1,22 +1,16 @@
-package com.alexbar.layoutbasic.screen.confirm_payment.widgets
+package com.alexbar.layoutbasic.movies_app.screen.main_list.widgets
 
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.grid.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import com.alexbar.layoutbasic.movies_app.model.Media
 import com.alexbar.layoutbasic.ui.theme.Dimens
 import com.alexbar.layoutbasic.ui.theme.Dimens.dimen_150_dp
-import com.alexbar.layoutbasic.utils.Media
 
 @Composable
 fun ShowAllMediaGrid(

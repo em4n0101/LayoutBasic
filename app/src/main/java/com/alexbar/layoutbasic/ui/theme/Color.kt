@@ -21,3 +21,7 @@ val CardVisa = Color(0xFF1A1F71)
 val CardMastercard = Color(0xFFEB001B)
 val CardAmex = Color(0xFF2E77BC)
 val CardUnknown = Color(0xFF4A4A4A)
+
+// Movies App
+val AppBackground = Color(0xFF100F29)
+

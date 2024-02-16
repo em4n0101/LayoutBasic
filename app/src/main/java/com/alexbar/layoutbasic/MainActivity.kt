@@ -15,7 +15,12 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.alexbar.layoutbasic.screen.confirm_payment.screens.MoviesScreens
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.ui.Modifier
+import com.alexbar.layoutbasic.movies_app.screen.main_list.MoviesScreens
+import com.alexbar.layoutbasic.ui.theme.AppBackground
 
 class MainActivity : ComponentActivity() {
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -23,7 +28,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
 
-            MoviesScreens()
+            Box(modifier = Modifier
+                .fillMaxSize()
+                .background(AppBackground)) {
+                MoviesScreens()
+            }
 //            ConfirmPaymentScreen()
 //            SnakeGame()
 //            WelcomeScreen()

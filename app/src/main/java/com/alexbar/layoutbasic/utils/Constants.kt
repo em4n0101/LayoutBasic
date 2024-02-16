@@ -51,10 +51,3 @@ object ConfirmPayment {
     const val total_amount = 78.99
 
 }
-
-object ShowsConstants {
-    const val see_all = "View All"
-    const val movies = "Movies"
-    const val series = "Series"
-    const val base_url = "https://image.tmdb.org/t/p/w500/"
-}
