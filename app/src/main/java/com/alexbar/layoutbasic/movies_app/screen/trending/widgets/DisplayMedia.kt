@@ -1,4 +1,4 @@
-package com.alexbar.layoutbasic.movies_app.screen.main_list.widgets
+package com.alexbar.layoutbasic.movies_app.screen.trending.widgets
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*

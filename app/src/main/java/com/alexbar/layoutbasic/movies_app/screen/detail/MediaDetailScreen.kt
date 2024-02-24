@@ -3,7 +3,7 @@ package com.alexbar.layoutbasic.movies_app.screen.detail
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.*
@@ -17,6 +17,10 @@ import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.first_air_date
 import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.media_type_movie
 import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.popularity
 import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.release_date
+import com.alexbar.layoutbasic.movies_app.utils.formatDate
+import com.alexbar.layoutbasic.movies_app.utils.getImageBackdropCompleteUrl
+import com.alexbar.layoutbasic.movies_app.utils.getImagePosterCompleteUrl
+import com.alexbar.layoutbasic.movies_app.utils.getVoteAverageFormatted
 import com.alexbar.layoutbasic.ui.theme.AppBackground
 import com.alexbar.layoutbasic.ui.theme.Dimens.dimen_100_dp
 import com.alexbar.layoutbasic.ui.theme.Dimens.dimen_110_dp
@@ -33,13 +37,15 @@ import com.alexbar.layoutbasic.ui.theme.Typography
 fun MediaDetailScreen(
     media: Media,
     modifier: Modifier = Modifier,
-    onBackPressed: () -> Unit,
+    isFavorite: Boolean = false,
+    onFavoritePressed: (Media) -> Unit,
+    onBackPressed: () -> Unit
 ) {
     ConstraintLayout(modifier = modifier
         .fillMaxSize()
         .background(AppBackground)) {
 
-        val (posterImage, backdropImageGradient, title, summary, backButton, info) = createRefs()
+        val (posterImage, backdropImageGradient, title, summary, backButton, info, favoriteButton) = createRefs()
 
         MediaImageWithGradient(url = media.getImageBackdropCompleteUrl(), modifier = Modifier
             .fillMaxWidth()
@@ -70,8 +76,8 @@ fun MediaDetailScreen(
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(text =
                 if(media.mediaType == media_type_movie)
-                    media.getReleaseDateFormatted()
-                else media.getAirDateFormatted(),
+                    media.releaseDate.formatDate()
+                else media.firstAirDate.formatDate(),
                     style = Typography.labelMedium)
                 Text(text =
                 if(media.mediaType == media_type_movie)
@@ -90,6 +96,19 @@ fun MediaDetailScreen(
                 .constrainAs(backButton) {
                     top.linkTo(parent.top, dimen_16_dp)
                     start.linkTo(parent.start, dimen_16_dp)
+                }
+        )
+
+        Icon(
+            imageVector = if (isFavorite) Icons.Filled.Favorite else Icons.Filled.FavoriteBorder,
+            contentDescription = null,
+            tint = Color.White,
+            modifier = Modifier
+                .size(dimen_30_dp)
+                .clickable { onFavoritePressed(media) }
+                .constrainAs(favoriteButton) {
+                    top.linkTo(parent.top, dimen_16_dp)
+                    end.linkTo(parent.end, dimen_16_dp)
                 }
         )
 
@@ -118,6 +137,8 @@ fun MediaDetailScreen(
 @Composable
 fun MediaDetailScreenPreview() {
     MediaDetailScreen(
+        onBackPressed = {},
+        onFavoritePressed = {},
         media = Media(
             imagePosterUrl = "",
             title = "Title",
@@ -127,6 +148,6 @@ fun MediaDetailScreenPreview() {
             mediaType = "tv",
             imageBackdropUrl = "",
             releaseDate = ""
-        )
-    ) {}
+        ),
+    )
 }

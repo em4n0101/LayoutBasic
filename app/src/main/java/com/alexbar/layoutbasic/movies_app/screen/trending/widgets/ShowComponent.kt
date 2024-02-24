@@ -1,4 +1,4 @@
-package com.alexbar.layoutbasic.movies_app.screen.main_list.widgets
+package com.alexbar.layoutbasic.movies_app.screen.trending.widgets
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -11,6 +11,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import coil.compose.AsyncImage
 import com.alexbar.layoutbasic.createVerticalGradient
 import com.alexbar.layoutbasic.movies_app.model.Media
+import com.alexbar.layoutbasic.movies_app.utils.getImagePosterCompleteUrl
 import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.media_type_movie
 import com.alexbar.layoutbasic.ui.theme.Dimens.dimen_12_dp
 import com.alexbar.layoutbasic.ui.theme.Dimens.dimen_180_dp

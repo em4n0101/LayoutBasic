@@ -1,24 +1,19 @@
-package com.alexbar.layoutbasic.movies_app.screen.main_list
+package com.alexbar.layoutbasic.movies_app.screen.trending
 
-import android.annotation.SuppressLint
 import androidx.compose.runtime.*
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import com.alexbar.layoutbasic.movies_app.model.Media
 import com.alexbar.layoutbasic.movies_app.screen.detail.MediaDetailScreen
-import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.movies_file
-import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.tv_series_file
-import com.alexbar.layoutbasic.movies_app.utils.getListFromJsonAsset
-import com.alexbar.layoutbasic.movies_app.screen.main_list.widgets.DisplayMedia
-import com.alexbar.layoutbasic.movies_app.screen.main_list.widgets.ShowAllMediaGrid
+import com.alexbar.layoutbasic.movies_app.screen.trending.widgets.DisplayMedia
+import com.alexbar.layoutbasic.movies_app.screen.trending.widgets.ShowAllMediaGrid
 
-@SuppressLint("MutableCollectionMutableState")
 @Composable
-fun MoviesScreens() {
-    val context = LocalContext.current
-    val movieList: List<Media> = context.getListFromJsonAsset(movies_file) ?: emptyList()
-    val seriesList: List<Media> = context.getListFromJsonAsset(tv_series_file) ?: emptyList()
-
+fun TrendingMediaScreen(
+    movieList: List<Media>,
+    seriesList: List<Media>,
+    favorites: List<Media>,
+    onFavoriteMediaSelected: (Media) -> Unit
+) {
     var showMediaGrid by remember { mutableStateOf(false) }
     var mediaListSelected by remember { mutableStateOf(emptyList<Media>()) }
     var mediaSelected by remember { mutableStateOf<Media?>(null) }
@@ -42,7 +37,11 @@ fun MoviesScreens() {
     }
 
     if (mediaSelected != null)  {
-        MediaDetailScreen(media = mediaSelected!!) {
+        MediaDetailScreen(
+            media = mediaSelected!!,
+            isFavorite = favorites.contains(mediaSelected!!),
+            onFavoritePressed = onFavoriteMediaSelected
+        ) {
             mediaSelected = null
         }
     }
@@ -51,6 +50,10 @@ fun MoviesScreens() {
 @Preview
 @Composable
 fun MoviesScreensPreview() {
-    MoviesScreens()
+    TrendingMediaScreen(
+        emptyList(),
+        emptyList(),
+        emptyList()
+    ) {}
 }
 
