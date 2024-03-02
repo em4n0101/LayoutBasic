@@ -1,8 +1,12 @@
 package com.alexbar.layoutbasic.movies_app.screen.mainTabContent
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
-import androidx.compose.runtime.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
@@ -15,62 +19,61 @@ import com.alexbar.layoutbasic.movies_app.utils.MovieConstants
 import com.alexbar.layoutbasic.movies_app.utils.getListFromJsonAsset
 import com.alexbar.layoutbasic.ui.theme.AppBackground
 
+enum class Tab { Trending, Favorites, Mix }
+
 @Composable
 fun MainTabContent() {
     val context = LocalContext.current
-    var showTrending by remember { mutableStateOf(true) }
-    var showFavorites by remember { mutableStateOf(false) }
-    var showMix by remember { mutableStateOf(false) }
     val movieList: List<Media> = context.getListFromJsonAsset(MovieConstants.movies_file) ?: emptyList()
     val seriesList: List<Media> = context.getListFromJsonAsset(MovieConstants.tv_series_file) ?: emptyList()
-    var favoritesMedia by remember { mutableStateOf(listOf<Media>()) }
+    val (selectedTab, setSelectedTab) = remember { mutableStateOf(Tab.Trending) }
+    val (favoritesMedia, setFavoritesMedia) = remember { mutableStateOf(emptyList<Media>()) }
 
-    Column (modifier = Modifier.fillMaxSize()) {
+    fun onTabSelected(tab: Tab) {
+        setSelectedTab(tab)
+    }
+
+    Column(modifier = Modifier.fillMaxSize()) {
         AppTabBar { selectedIndex ->
-            when (selectedIndex) {
-                0 -> {
-                    showTrending = true
-                    showFavorites = false
-                    showMix = false
+            onTabSelected(
+                when (selectedIndex) {
+                    0 -> Tab.Trending
+                    1 -> Tab.Favorites
+                    else -> Tab.Mix
                 }
-                1 -> {
-                    showTrending = false
-                    showFavorites = true
-                    showMix = false
-                }
-                2 -> {
-                    showTrending = false
-                    showFavorites = false
-                    showMix = true
-                }
-            }
+            )
         }
 
-        if (showTrending) {
-            Box(modifier = Modifier
-                .fillMaxSize()
-                .background(AppBackground)
-            ) {
-                TrendingMediaScreen(
-                    movieList = movieList,
-                    seriesList = seriesList,
-                    favorites = favoritesMedia
+        when (selectedTab) {
+            Tab.Trending -> {
+                Box(modifier = Modifier
+                    .fillMaxSize()
+                    .background(AppBackground)
                 ) {
-                    favoritesMedia = if (favoritesMedia.contains(it))
-                        favoritesMedia.toMutableList().apply { remove(it) }
-                    else
-                        favoritesMedia.toMutableList().apply { add(it) }
-
+                    TrendingMediaScreen(
+                        movieList = movieList,
+                        seriesList = seriesList,
+                        favorites = favoritesMedia
+                    ) { media ->
+                        setFavoritesMedia(
+                            if (favoritesMedia.contains(media))
+                                favoritesMedia - media
+                            else
+                                favoritesMedia + media
+                        )
+                    }
                 }
             }
-        }
-        if (showFavorites) {
-            FavoritesMediaScreen(favorites = favoritesMedia){
-                favoritesMedia = favoritesMedia.toMutableList().apply { remove(it) }
+
+            Tab.Favorites -> {
+                FavoritesMediaScreen(favorites = favoritesMedia) { media ->
+                    setFavoritesMedia(favoritesMedia - media)
+                }
             }
-        }
-        if (showMix) {
-            MixMediaScreen(listMedia = seriesList + movieList)
+
+            Tab.Mix -> {
+                MixMediaScreen(listMedia = seriesList + movieList)
+            }
         }
     }
 }

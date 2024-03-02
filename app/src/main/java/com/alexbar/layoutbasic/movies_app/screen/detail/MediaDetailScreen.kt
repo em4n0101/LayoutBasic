@@ -13,6 +13,7 @@ import androidx.constraintlayout.compose.ConstraintLayout
 import com.alexbar.layoutbasic.movies_app.model.Media
 import com.alexbar.layoutbasic.movies_app.screen.detail.widgets.ExpandableSummaryCard
 import com.alexbar.layoutbasic.movies_app.screen.detail.widgets.MediaImageWithGradient
+import com.alexbar.layoutbasic.movies_app.screen.detail.widgets.MediaInfoText
 import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.first_air_date
 import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.media_type_movie
 import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.popularity
@@ -70,19 +71,19 @@ fun MediaDetailScreen(
                 top.linkTo(posterImage.bottom, dimen_24_dp)
             }) {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(text = media.getVoteAverageFormatted(), style = Typography.labelMedium)
-                Text(text = popularity, style = Typography.labelSmall)
+                MediaInfoText(text = media.getVoteAverageFormatted(), style = Typography.labelMedium)
+                MediaInfoText(text = popularity, style = Typography.labelSmall)
             }
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(text =
-                if(media.mediaType == media_type_movie)
-                    media.releaseDate.formatDate()
-                else media.firstAirDate.formatDate(),
-                    style = Typography.labelMedium)
-                Text(text =
-                if(media.mediaType == media_type_movie)
-                    release_date
-                else first_air_date, style = Typography.labelSmall)
+                MediaInfoText(
+                    text = if (media.mediaType == media_type_movie) media.releaseDate.formatDate()
+                    else media.firstAirDate.formatDate(),
+                    style = Typography.labelMedium
+                )
+                MediaInfoText(
+                    text = if (media.mediaType == media_type_movie) release_date else first_air_date,
+                    style = Typography.labelSmall
+                )
             }
         }
 
