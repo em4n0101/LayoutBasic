@@ -21,4 +21,6 @@ object MovieConstants {
     const val tab_trending = "Trending"
     const val tab_favorites = "Favorites"
     const val tab_mix = "Mix"
+    const val api_base_url = "https://api.themoviedb.org/3/"
+    const val user_token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNjU3NzQ1MTgwMmM1MjI4OGEyY2Q2YTk4ODViNWMwOCIsInN1YiI6IjVlZTQ1NmNhOTdlYWI0MDAyMGU1ODhlNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Seh-Mv7MaNjhgZXSoLfFNvtJJwemtN5xf6xauqBu0CI"
 }

@@ -22,7 +22,9 @@ import com.alexbar.layoutbasic.ui.theme.AppBackground
 enum class Tab { Trending, Favorites, Mix }
 
 @Composable
-fun MainTabContent() {
+fun MainTabContent(
+    onMediaItemSelected: (Media) -> Unit
+) {
     val context = LocalContext.current
     val movieList: List<Media> = context.getListFromJsonAsset(MovieConstants.movies_file) ?: emptyList()
     val seriesList: List<Media> = context.getListFromJsonAsset(MovieConstants.tv_series_file) ?: emptyList()
@@ -51,9 +53,8 @@ fun MainTabContent() {
                     .background(AppBackground)
                 ) {
                     TrendingMediaScreen(
-                        movieList = movieList,
-                        seriesList = seriesList,
-                        favorites = favoritesMedia
+                        favorites = favoritesMedia,
+                        onMediaItemSelected = { onMediaItemSelected(it) },
                     ) { media ->
                         setFavoritesMedia(
                             if (favoritesMedia.contains(media))
@@ -72,7 +73,7 @@ fun MainTabContent() {
             }
 
             Tab.Mix -> {
-                MixMediaScreen(listMedia = seriesList + movieList)
+                MixMediaScreen()
             }
         }
     }
@@ -81,5 +82,5 @@ fun MainTabContent() {
 @Preview
 @Composable
 fun MainTabContentPreview() {
-    MainTabContent()
+    MainTabContent() {}
 }

@@ -17,6 +17,7 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.tooling.preview.Preview
+import com.alexbar.layoutbasic.movies_app.nav.Screens
 import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.tab_favorites
 import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.tab_mix
 import com.alexbar.layoutbasic.movies_app.utils.MovieConstants.tab_trending
@@ -27,17 +28,20 @@ fun AppTabBar(onTabSelected: (Int) -> Unit) {
         TabItem(
             title = tab_trending,
             selectedIcon = Icons.Filled.Movie,
-            unselectedIcon = Icons.Outlined.Movie
+            unselectedIcon = Icons.Outlined.Movie,
+            screen = Screens.TrendingMediaScreen
         ),
         TabItem(
             title = tab_favorites,
             selectedIcon = Icons.Filled.Favorite,
-            unselectedIcon = Icons.Outlined.FavoriteBorder
+            unselectedIcon = Icons.Outlined.FavoriteBorder,
+            screen = Screens.FavoritesMediaScreen
         ),
         TabItem(
             title = tab_mix,
             selectedIcon = Icons.Outlined.GridView,
-            unselectedIcon = Icons.Filled.GridView
+            unselectedIcon = Icons.Filled.GridView,
+            screen = Screens.MixMediaScreen
         )
     )
 
